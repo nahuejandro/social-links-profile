@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    /* Colores */
+    
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+    
+    /* Tamaño fuentes */
+    
+    --Fs-default: 14px;
+    
+    /* Font Weights */
+    
+    --fw-normal: 400;
+    --fw-semiBold: 600;
+    --fw-bold: 700;
+    
+    
+    }
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--Off-Black);
+    font-family: "Inter", sans-serif;
+}
+
+p, h2{
+   color: var(--White);
+}
+
+img{
+    border-radius: 100px;
+}
+
+.container-todo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-Grey);
+    border-radius: 10px;
+    margin: 200px 390px;
+}
+
+.container-todo .nombre-jessica{
+    margin: 10px;
+}
+
+.container-todo .london{
+    color: var(--Green);
+    font-weight: var(--fw-semiBold);
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.container-todo .descripcion{
+    color: var(--White);
+    margin: 0;
+}
+
+.botones p{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: var(--White);
+    background-color: var(--Grey);
+    border-radius: 10px;
+    width: 350px;
+    height: 40px;
+    text-align: center;
+    padding-top: 0.7rem;
+    font-weight: var(--fw-bold);
+    }
+
+    .botones p:hover{
+        background-color: var(--Green);
+        color: var(--Off-Black);
+    }
+    
+    /* MEDIA QUERY */
+
+    @media (max-width:375px){
+        .container-todo{
+            margin: 0;
+        }
+    }
+
+    @media (max-width:1440px){
+        .container-todo{
+            margin: 0;
+        }
+    }
