@@ -42,14 +42,17 @@ img{
 }
 
 .container-todo{
+    background-color: var(--Dark-Grey);
+    width: 400px;
+    height: 620px;
+    margin: 200px auto;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--Dark-Grey);
-    border-radius: 10px;
-    margin: 200px 390px;
 }
+
 
 .container-todo .nombre-jessica{
     margin: 10px;
@@ -79,6 +82,7 @@ img{
     text-align: center;
     padding-top: 0.7rem;
     font-weight: var(--fw-bold);
+    transition: 0.3s
     }
 
     .botones p:hover{
@@ -88,14 +92,14 @@ img{
     
     /* MEDIA QUERY */
 
-    @media (max-width:375px){
+    @media (max-width: 375px){
         .container-todo{
             margin: 0;
         }
     }
 
-    @media (max-width:1440px){
-        .container-todo{
-            margin: 0;
+   @media (min-width: 1440px){
+        .container-todo {
+
         }
-    }
+   }
