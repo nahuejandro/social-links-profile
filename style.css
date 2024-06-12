@@ -99,6 +99,10 @@ img{
         width: 80%;
         margin: 90px auto;
        }
+       .container-todo .descripcion {
+        margin-left: 3px;
+        font-size: 14px;
+        }
 
        .botones p{
         width: 270px;
@@ -106,10 +110,4 @@ img{
        
     }
 
-   @media (min-width: 1440px){
-        .container-todo {
-
-        }
-   }
-
-   
+     
